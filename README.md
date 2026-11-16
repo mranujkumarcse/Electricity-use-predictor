@@ -179,18 +179,5 @@ python main.py --file usage.csv --predict 5 --chart
 
 ---
 
-## 🎓 9. Academic Viva Voce Guide (Key Q&A)
-
-**Q1: Why is a minimum of 2 data points required for linear regression?**  
-*Answer*: Mathematically, a straight line in two dimensions is defined by the degree of freedom equation $df = n - 2$. With only 1 point ($n = 1$), an infinite number of straight lines can pass through it, rendering slope calculation indeterminate ($0/0$ division). Thus, at least 2 distinct points are mandatory.
-
-**Q2: What is the significance of $R^2$ in this project?**  
-*Answer*: $R^2$ (Coefficient of Determination) quantifies goodness of fit. An $R^2$ of 0.99 in Test Case 4 signifies that 99% of the variance in electricity units consumed is directly explained by the passage of monthly time, confirming high predictive reliability.
-
-**Q3: How does `numpy.polyfit(x, y, 1)` work under the hood?**  
-*Answer*: It implements the Ordinary Least Squares (OLS) algorithm, constructing the design matrix $X = [x, 1]$ and computing parameter vector $\beta = (X^T X)^{-1} X^T y$, yielding the slope $\beta_0$ and intercept $\beta_1$ with $O(n)$ computational complexity.
-
----
-
 **Course Faculty Review**: Approved for Evaluation & Submission  
 **Status**: Complete, Verified & Production-Ready
